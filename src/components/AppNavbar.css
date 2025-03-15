@@ -1,0 +1,9 @@
+/* Navbar Styles */
+.navbar {
+    background-color: #ddc8b5;
+    height: 100px;
+}
+.menu-button {
+    display: flex;
+    align-items: center;
+}

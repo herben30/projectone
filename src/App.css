@@ -1,0 +1,179 @@
+/* App.css */
+
+body {
+  font-family: "Montserrat", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 300;
+  font-style: normal;
+}
+
+.blur-overlay {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(188, 173, 154, 0.5);
+  pointer-events: none;
+}
+
+.blur-image {
+  filter: blur(4px);
+}
+
+/* Media queries for responsive design */
+@media (max-width: 768px) {
+  .home-container {
+    height: 400px; /* Adjust the height for smaller screens */
+  }
+}
+
+@media (max-width: 576px) {
+  .home-container {
+    height: 300px; /* Adjust the height for even smaller screens */
+  }
+}
+
+
+/*products card*/
+.custom-card {
+  border: none; /* Remove the default border */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Optional: Add a subtle box shadow */
+}
+
+.bold-text {
+  font-weight: bold;
+  font-size: 1.5rem;
+}
+
+.custom-card {
+  overflow: hidden;
+}
+
+.card-text-wrapper {
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+
+.quantity-label{
+   font-size: 1.5rem;
+}
+
+
+
+
+/*Register Page*/
+.form {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  max-width: 400px;
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 20px;
+  position: relative;
+}
+
+.title {
+  font-size: 28px;
+  color: #353a3d;
+  font-weight: 600;
+  letter-spacing: -1px;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 60px;
+}
+
+.title::before {
+  width: 18px;
+  height: 18px;
+  background-color: #353a3d;
+}
+
+.title::after {
+  width: 18px;
+  height: 18px;
+  animation: pulse 1s linear infinite;
+}
+
+
+.signin {
+  text-align: center;
+  color: rgba(88, 87, 87, 0.822);
+  font-size: 14px;
+}
+
+.signin .a {
+  color: royalblue;
+}
+
+.signin .a:hover {
+  text-decoration: underline #353a3d;
+}
+
+.flex {
+  display: flex;
+  width: 100%;
+  gap: 6px;
+}
+
+.form label {
+  position: relative;
+}
+
+.form label .input {
+  width: 100%; /* Make all inputs 100% width */
+  padding: 10px 10px 20px 10px;
+  outline: 0;
+  border: 1px solid rgba(105, 105, 105, 0.397);
+  border-radius: 10px;
+}
+
+.form label .input + span {
+  position: absolute;
+  left: 10px;
+  top: 15px;
+  color: grey;
+  font-size: 0.9em;
+  cursor: text;
+  transition: 0.3s ease;
+}
+
+.form label .input:placeholder-shown + span {
+  top: 15px;
+  font-size: 0.9em;
+}
+
+.form label .input:focus + span,
+.form label .input:valid + span {
+  top: 0px;
+  font-size: 0.7em;
+  font-weight: 600;
+}
+
+.form label .input:valid + span {
+  color: green;
+}
+
+
+
+.input {
+  width: 100%; /* Make all inputs 100% width */
+}
+
+@keyframes pulse {
+  from {
+    transform: scale(0.9);
+    opacity: 1;
+  }
+
+  to {
+    transform: scale(1.8);
+    opacity: 0;
+  }
+}
