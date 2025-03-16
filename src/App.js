@@ -5,6 +5,7 @@ import Register from './pages/Register.js';
 import Login from './pages/Login.js';
 import Logout from './pages/Logout.js';
 import Products from './pages/Products.js';
+import Expenses from './pages/Expenses.js';
 import ProductView from './pages/ProductView.js';
 import AddProduct from './pages/AddProduct.js';
 import Profile from './pages/Profile.js';
@@ -75,6 +76,7 @@ function App() {
             <Routes>
                 <Route path="/" element={<Home />} />
                 <Route path="/products" element={<Products />} />
+                <Route path="/expenses" element={<Expenses />} />
                 <Route path="/register" element={<Register />} />
                 <Route path="/login" element={<Login />} />
                 <Route path="/logout" element={<Logout />} />
