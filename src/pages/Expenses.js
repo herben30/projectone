@@ -13,7 +13,7 @@ export default function Expenses() {
 				    <Card.Body> 
 
 				        <Button variant="outline-dark"  className="mb-3">
-				            
+				            Add Expenses
 				        </Button>
 
 				        <Row className="align-items-center">
