@@ -6,7 +6,6 @@ import { FaLock, FaEnvelope } from 'react-icons/fa'; // Import FontAwesome icons
 import '../App.css';
 import LoginImg from '../images/login.jpg';
 import UserContext from '../UserContext.js';
-import Logo from "../images/logo.png"
 
 export default function Login() {
 
